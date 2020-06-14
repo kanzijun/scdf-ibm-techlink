@@ -1,4 +1,4 @@
-# TechLink-CAMpung_SCDFXIBM
+# TechLink-CAMpong_SCDFXIBM
 
 [![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
@@ -41,25 +41,23 @@ Our idea consists of a two-pronged approach, a technical and a social one. We ho
 
 #### Technical Solution.
 
-We will be using IoT devices such as Raspberry Pi to keep surveillance in the house of these vulnerable elderly. By processing the live stream provided by the Raspberry Pi with our image classification model, we will determine if the elderly is currently suffering from any form of emergency.
+We will be using IoT devices such as Raspberry Pi to keep surveillance in the house of these vulnerable elderly. By processing the live stream provided by the Raspberry Pi with our image classification model, we will determine if the elderly is currently suffering from any form of emergencies. When the probability of emergency exceeds our threshold, we will dispatch a "ask for help" message to the nearest CFI (Community First Informer).
 
-When the probability of emergency exceeds our threshold, we will dispatch a "ask for help" message to the nearest CFI (Community First Informer).
-
-#### Social Aspect (Kampung Spirit)
+#### Social Aspect (Kampong Spirit)
 
 One technical worry immediately pops up and that is the accuracy of such visual classification models and the high number of false positives can potentially hinder emergency effort by SCDF due to high load.
 
-As we understand the limitation of visual recognition to efficiently determine if any incident in fact did happen, the team came out with a social approach to mitigate this. The term CFI (Community First Informer) is inspired from CFR (Community First Responders). While the CFR role is to be the first responder to an emergency situation, CFI role will be to assist in providing information on the potential emergency
+As we understand the limitation of visual recognition to efficiently determine if any incident in fact did happen, the team came out with a social approach to mitigate this. The term CFI (Community First Informer) is inspired from CFR (Community First Responders). While the CFR role is to be the first responder to an emergency situation, CFI role will be to assist in providing information on the potential emergencies. We believe that the CFI role can empower everyday citizens like you and I to greater contribute to social and community welfare.
 
 #### Leveraging Both Aspect
 
 After bringing the CFI to the scene, they can interact with our chatbot to provide vital information on the situation so that we can more accurately determine the level of emergency.
 
-CFI can also be the one to call for emergency based on their own judgement, our system alerts them of potential danger and bring them to the scene.
+Alternatively, CFI can also be the one to call for emergency based on their own judgement at the scene.
 
 ### Full pitch deck
 
-For a more in-depth explanation on our idea, challenges we might face (privacy issues) and how we mitigate them, do refer to our full pitch deck [here](https://docs.google.com/presentation/d/10_5M_DTHn7LGWXVgC4JRWy-gb9XTHm7qAQqwSBHm2k4/edit?usp=sharing)
+For a more in-depth explanation on our idea, challenges we might face (privacy issues, critical mass fo effectiveness) and how we mitigate them, do refer to our full pitch deck [here](https://docs.google.com/presentation/d/10_5M_DTHn7LGWXVgC4JRWy-gb9XTHm7qAQqwSBHm2k4/edit?usp=sharing)
 
 ## Demo video
 
