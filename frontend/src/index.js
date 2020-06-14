@@ -113,6 +113,14 @@ const renderClassification = (ctx, predictions) => {
     });
 };
 
+const alertCFI = async () => {
+  try {
+    await fetch("http://localhost:8080/notif");
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 const App = () => {
   const [model, setModel] = useState(undefined);
   const [preview, setPreview] = useState(undefined);
@@ -153,6 +161,11 @@ const App = () => {
 
       const predictions = await model.classify(e.target);
       console.log(predictions[0]);
+
+      if (predictions[0].score > 0.8) {
+        alertCFI();
+      }
+
       renderClassification(ctx, predictions);
     },
     [model, resultsCanvas]
