@@ -4,7 +4,7 @@
 
 ## Team TechLink
 
-- **Eugene Fang JunJie** - _Y4 REP student blah_
+- **Eugene Fang JunJie** - _Bioengineering and Technology Management, Renaissance Engineering Programme, NTU_
 - **Selina Fang** - _ownself fill in_
 - **Kan Zi Jun** - _Computer Science and Technology Management, Renaissance Engineering Programme, NTU_
 - **Lim Jun Quan** - _Computer Science, NUS_
