@@ -1,6 +1,6 @@
-# TechLink-CAMpong_SCDFXIBM
+# TechLink-CAMpung_SCDFXIBM
 
-[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://callforcode.org/slack)
+[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 ## Team TechLink
 
@@ -27,6 +27,10 @@
 ### How can technology help?
 
 ### The idea
+
+### Full pitch deck
+
+You can find our full pitch deck [here](https://docs.google.com/presentation/d/10_5M_DTHn7LGWXVgC4JRWy-gb9XTHm7qAQqwSBHm2k4/edit?usp=sharing)
 
 ## Demo video
 
@@ -106,12 +110,17 @@ Do contact us for the Watson Assistant keys for access to our model.
    yarn start
    ```
 
-   The frontend will be deployed on http://localhost:3000, backend on http://localhost:8080
+The frontend will be deployed on http://localhost:3000, backend on http://localhost:8080
+
+## Usage
+
+We used the frontend service to simulate a frame from the video stream being processed. The model will determine if the frame has an individual suffering from cardiac arrest and send a notification to the number that your indicated in the credential (of course in the real implementation, it will send to the nearest CFI). The CFI will then be able to converse with the chatbot through the sms service and provide information for our system to make an action (call scdf or false alarm).
 
 ## Built with
 
 - [IBM Watson Visual Recognition](https://www.ibm.com/sg-en/cloud/watson-visual-recognition) - The service on the IBM Cloud that enables you to tag, classify and search visual content using machine learning.
 - [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/) - The conversation AI platform for chatbot
+- [IBM Cloud Foundry](https://www.cloudfoundry.org/) - Deployment of backend service
 
 ## Acknowledgments
 
