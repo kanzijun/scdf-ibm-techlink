@@ -5,10 +5,10 @@
 ## Team TechLink
 
 - **Eugene Fang JunJie** - _Y4 REP student blah_
-- **Kan Zi Jun** - _Computer Science and Technology Management, Renaissance Engineering Programme, NTU_
-- **Lim Jun Quan** - _ownself fill in_
-- **Lim Jun Hup** - _ownself fill in_
 - **Selina Fang** - _ownself fill in_
+- **Kan Zi Jun** - _Computer Science and Technology Management, Renaissance Engineering Programme, NTU_
+- **Lim Jun Quan** - _Computer Science, NUS_
+- **Lim Jun Hup** - _Computer Science, NUS_
 
 ## Contents
 
@@ -17,6 +17,7 @@
 1. [The architecture](#the-architecture)
 1. [Project roadmap](#project-roadmap)
 1. [Getting started](#getting-started)
+1. [Usage](#usage)
 1. [Built with](#built-with)
 1. [Acknowledgments](#acknowledgments)
 
@@ -24,13 +25,41 @@
 
 ### What's the problem?
 
+In the current flow of emergency relief, emergency responses and mobilisations are only activated when an individual calls 995. However, what happens if an accident or emergency happens to someone who lives alone at home? By the time any passerby realises the incident, it is often too late. Unfortunately, the rising trend of elderly staying alone will potentially make such a scenario more prevalent.
+
+Singapore aging population is projected to consist of 20% elderly in 2025 and this number is set to grow to 33% by 2035. Out of the population, 10% of the elderly live alone and this number is too expected to rise due to declining birth rate.
+
+Hence, the team feels that it is of utmost importance to be able to detect emergencies that happen when these elderly are alone. With early detection, we will then be able to take swift and decisive actions to reduce the fatality of such incidences.
+
 ### How can technology help?
+
+We hope to leverage technologies such as IoT, Visual Recognition, Natural Language Processing and Automated Message Dispatch channel to tackle the problem stated.
 
 ### The idea
 
+Our idea consists of a two-pronged approach, a technical and a social one. We hope not only to leverage on technology but also the community spirit to aid our elderly into a safer living environment.
+
+#### Technical Solution.
+
+We will be using IoT devices such as Raspberry Pi to keep surveillance in the house of these vulnerable elderly. By processing the live stream provided by the Raspberry Pi with our image classification model, we will determine if the elderly is currently suffering from any form of emergency.
+
+When the probability of emergency exceeds our threshold, we will dispatch a "ask for help" message to the nearest CFI (Community First Informer).
+
+#### Social Aspect (Kampung Spirit)
+
+One technical worry immediately pops up and that is the accuracy of such visual classification models and the high number of false positives can potentially hinder emergency effort by SCDF due to high load.
+
+As we understand the limitation of visual recognition to efficiently determine if any incident in fact did happen, the team came out with a social approach to mitigate this. The term CFI (Community First Informer) is inspired from CFR (Community First Responders). While the CFR role is to be the first responder to an emergency situation, CFI role will be to assist in providing information on the potential emergency
+
+#### Leveraging Both Aspect
+
+After bringing the CFI to the scene, they can interact with our chatbot to provide vital information on the situation so that we can more accurately determine the level of emergency.
+
+CFI can also be the one to call for emergency based on their own judgement, our system alerts them of potential danger and bring them to the scene.
+
 ### Full pitch deck
 
-You can find our full pitch deck [here](https://docs.google.com/presentation/d/10_5M_DTHn7LGWXVgC4JRWy-gb9XTHm7qAQqwSBHm2k4/edit?usp=sharing)
+For a more in-depth explanation on our idea, challenges we might face (privacy issues) and how we mitigate them, do refer to our full pitch deck [here](https://docs.google.com/presentation/d/10_5M_DTHn7LGWXVgC4JRWy-gb9XTHm7qAQqwSBHm2k4/edit?usp=sharing)
 
 ## Demo video
 
@@ -38,13 +67,13 @@ You can find our full pitch deck [here](https://docs.google.com/presentation/d/1
 
 ## The architecture
 
-![architecture]()
+![architecture](https://drive.google.com/file/d/1gsoHLNxAK_NNAF9cB0a7QxYLEPQwg4QI/view?usp=sharing)
 
 1.
 
 ## Project roadmap
 
-![Roadmap](roadmap.jpg)
+![Roadmap](https://docs.google.com/presentation/d/10_5M_DTHn7LGWXVgC4JRWy-gb9XTHm7qAQqwSBHm2k4/edit#slide=id.g88ca53a6c0_2_298)
 
 ## Getting started
 
@@ -52,7 +81,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Before you can begin, you'll need to sign up for a trial account with Twilio to get the needed credientials as well the the trial number to start sending out messages.
+Before you can begin, you'll need to sign up for a trial account with Twilio to get the needed credentials as well the the trial number to start sending out messages.
 
 Do contact us for the Watson Assistant keys for access to our model.
 
@@ -114,7 +143,7 @@ The frontend will be deployed on http://localhost:3000, backend on http://localh
 
 ## Usage
 
-We used the frontend service to simulate a frame from the video stream being processed. The model will determine if the frame has an individual suffering from cardiac arrest and send a notification to the number that your indicated in the credential (of course in the real implementation, it will send to the nearest CFI). The CFI will then be able to converse with the chatbot through the sms service and provide information for our system to make an action (call scdf or false alarm).
+We used the frontend service to simulate a frame from the video stream being processed. The model will determine if the frame has an individual suffering from cardiac arrest and send a notification to the number that you indicated in the credential (of course in the real implementation, it will send to the nearest CFI). The CFI will then be able to converse with the chatbot through the sms service and provide information for our system to make an action (call scdf or false alarm).
 
 ## Built with
 
