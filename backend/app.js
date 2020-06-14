@@ -1,10 +1,9 @@
 var createError = require("http-errors");
 var express = require("express");
-var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
-var indexRouter = require("./routes/index");
+var replyRouter = require("./routes/reply");
 var notifRouter = require("./routes/notifications");
 
 var app = express();
@@ -14,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use("/", indexRouter);
+app.use("/reply", replyRouter);
 app.use("/notif", notifRouter);
 
 // catch 404 and forward to error handler

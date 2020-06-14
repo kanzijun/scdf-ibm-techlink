@@ -75,57 +75,6 @@ const getRetinaContext = (canvas) => {
   };
 };
 
-const renderObjectDetection = (ctx, predictions) => {
-  ctx.clearAll();
-  // Font options.
-  const font = `${14}px 'ibm-plex-sans', Helvetica Neue, Arial, sans-serif`;
-  ctx.setFont(font);
-  ctx.setTextBaseLine("top");
-  const border = 2;
-  const xPadding = 8;
-  const yPadding = 4;
-  const offset = 2;
-  const textHeight = parseInt(font, 10); // base 10
-
-  predictions.forEach((prediction) => {
-    const x = prediction.bbox[0];
-    const y = prediction.bbox[1];
-    const width = prediction.bbox[2];
-    const height = prediction.bbox[3];
-    // Draw the bounding box.
-    ctx.setStrokeStyle("#0062ff");
-    ctx.setLineWidth(border);
-
-    ctx.strokeRect(
-      Math.round(x),
-      Math.round(y),
-      Math.round(width),
-      Math.round(height)
-    );
-    // Draw the label background.
-    ctx.setFillStyle("#0062ff");
-    const textWidth = ctx.measureText(prediction.label).width;
-    ctx.fillRect(
-      Math.round(x - border / 2),
-      Math.round(y - (textHeight + yPadding) - offset),
-      Math.round(textWidth + xPadding),
-      Math.round(textHeight + yPadding)
-    );
-  });
-
-  predictions.forEach((prediction) => {
-    const x = prediction.bbox[0];
-    const y = prediction.bbox[1];
-    // Draw the text last to ensure it's on top.
-    ctx.setFillStyle("#ffffff");
-    ctx.fillText(
-      prediction.label,
-      Math.round(x - border / 2 + xPadding / 2),
-      Math.round(y - (textHeight + yPadding) - offset + yPadding / 2)
-    );
-  });
-};
-
 const renderClassification = (ctx, predictions) => {
   ctx.clearAll();
 
@@ -173,11 +122,8 @@ const App = () => {
     models.load("/model_web").then(async (model) => {
       // warm up the model
       const image = new ImageData(1, 1);
-      if (model.type === "detection") {
-        await model.detect(image);
-      } else {
-        await model.classify(image);
-      }
+      await model.classify(image);
+
       setModel(model);
     });
   }, []);
@@ -205,13 +151,9 @@ const App = () => {
       ctx.setWidth(imgWidth);
       ctx.setHeight(imgHeight);
 
-      if (model.type === "detection") {
-        const predictions = await model.detect(e.target);
-        renderObjectDetection(ctx, predictions);
-      } else {
-        const predictions = await model.classify(e.target);
-        renderClassification(ctx, predictions);
-      }
+      const predictions = await model.classify(e.target);
+      console.log(predictions[0]);
+      renderClassification(ctx, predictions);
     },
     [model, resultsCanvas]
   );

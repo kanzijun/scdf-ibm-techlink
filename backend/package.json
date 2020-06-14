@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "twilio-hook": "twilio  phone-numbers:update '+12019285134' --sms-url='http://localhost:8080/reply'",
     "start": "nodemon ./bin/www"
   },
   "dependencies": {
@@ -10,7 +11,7 @@
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
+    "ibm-watson": "^5.6.0",
     "morgan": "~1.9.1",
     "twilio": "^3.46.0"
   }
