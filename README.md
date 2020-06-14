@@ -67,13 +67,13 @@ For a more in-depth explanation on our idea, challenges we might face (privacy i
 
 ## The architecture
 
-![architecture](https://drive.google.com/file/d/1gsoHLNxAK_NNAF9cB0a7QxYLEPQwg4QI/view?usp=sharing)
+![architecture](tech.jpg)
 
 1.
 
 ## Project roadmap
 
-![Roadmap](https://docs.google.com/presentation/d/10_5M_DTHn7LGWXVgC4JRWy-gb9XTHm7qAQqwSBHm2k4/edit#slide=id.g88ca53a6c0_2_298)
+![Roadmap](roadmap.jpg)
 
 ## Getting started
 
