@@ -71,6 +71,20 @@ For a more in-depth explanation on our idea, challenges we might face (privacy i
 
 ![Roadmap](roadmap.jpg)
 
+In our 4 stage implementation plan, change management (getting buy-in from the public) is the toughest step, followed by the recruitment of CFIs for an effective solution.
+
+The first stages for any AI project is to 
+1. Start with a small AI team and initiative
+2. Prove the organizational value of AI through prototype development and achieving successful results from the pilot testing
+
+For our CAMpong solution, privacy concerns due to the cameras being at home will be an issue. Our team takes data protection and privacy concerns seriously and we want our stakeholders to feel the same way too. 
+
+The mitigation strategy focuses heavily on addressing this risk to safeguard the public's interest, and yet still manages to serve their needs for emergency response.
+
+The last step involves gaining a critical mass of CFIs that we can rely on. At this stage, residential and community events will be ideal for outreach and user education. Live demonstrations can be performed here.
+
+For further development of the project, we hope to integrate this technology into other types of emergency response situations, and other plausible SCDF operational processes as well.
+
 ## Getting started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
