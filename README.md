@@ -4,8 +4,8 @@
 
 ## Team TechLink
 
-- **Eugene Fang JunJie** - _Bioengineering and Technology Management, Renaissance Engineering Programme, NTU_
-- **Selina Fang** - _ownself fill in_
+- **Eugene Fang** - _Bioengineering and Technology Management, Renaissance Engineering Programme, NTU_
+- **Selina Fang** - _Business Analytics, NTU_
 - **Kan Zi Jun** - _Computer Science and Technology Management, Renaissance Engineering Programme, NTU_
 - **Lim Jun Quan** - _Computer Science, NUS_
 - **Lim Jun Hup** - _Computer Science, NUS_
@@ -27,9 +27,9 @@
 
 In the current flow of emergency relief, emergency responses and mobilisations are only activated when an individual calls 995. However, what happens if an accident or emergency happens to someone who lives alone at home? By the time any passerby realises the incident, it is often too late. Unfortunately, the rising trend of elderly staying alone will potentially make such a scenario more prevalent.
 
-Singapore aging population is projected to consist of 20% elderly in 2025 and this number is set to grow to 33% by 2035. Out of the population, 10% of the elderly live alone and this number is too expected to rise due to declining birth rate.
+Singapore's elderly population is projected to be 20% of our population in 2025, and this number is set to grow to 33% by 2035. Out of the population, 10% of the elderly live alone and this number is expected to rise too due to Singapore's declining birth rate.
 
-Hence, the team feels that it is of utmost importance to be able to detect emergencies that happen when these elderly are alone. With early detection, we will then be able to take swift and decisive actions to reduce the fatality of such incidences.
+Hence, the team feels that it is of utmost importance to be able to detect emergencies that happen when these elderly are alone at home. With early detection, we will then be able to take swift and decisive actions to reduce the fatality of such incidences.
 
 ### How can technology help?
 
@@ -37,33 +37,33 @@ We hope to leverage technologies such as IoT, Visual Recognition, Natural Langua
 
 ### The idea
 
-Our idea consists of a two-pronged approach, a technical and a social one. We hope not only to leverage on technology but also the community spirit to aid our elderly into a safer living environment.
+Our idea consists of a two-pronged approach, a technical and a social one. We hope not only to leverage on technology, but also the community spirit to aid our elderly into a safer living environment.
 
 #### Technical Solution.
 
-We will be using IoT devices such as Raspberry Pi to keep surveillance in the house of these vulnerable elderly. By processing the live stream provided by the Raspberry Pi with our image classification model, we will determine if the elderly is currently suffering from any form of emergencies. When the probability of emergency exceeds our threshold, we will dispatch a "ask for help" message to the nearest CFI (Community First Informer).
+We will be using IoT devices such as Raspberry Pi for the in-home surveillance the vulnerable population. By processing the livestream provided by the Raspberry Pi with our image classification model, we will be able to determine if the elderly is currently suffering from any form of emergencies e.g. Cardiac Arrests. When the probability of emergency exceeds our threshold, we will dispatch a "ask for help" message to the nearest CFI (Community First Informer).
 
 #### Social Aspect (Kampong Spirit)
 
-One technical worry immediately pops up and that is the accuracy of such visual classification models and the high number of false positives can potentially hinder emergency effort by SCDF due to high load.
+One technical worry that immediately pops up is the accuracy of such visual classification models, and the high number of false positives can potentially hinder emergency effort by SCDF due to high load.
 
-As we understand the limitation of visual recognition to efficiently determine if any incident in fact did happen, the team came out with a social approach to mitigate this. The term CFI (Community First Informer) is inspired from CFR (Community First Responders). While the CFR role is to be the first responder to an emergency situation, CFI role will be to assist in providing information on the potential emergencies. We believe that the CFI role can empower everyday citizens like you and I to greater contribute to social and community welfare.
+As we understand the limitation of visual recognition to efficiently determine if any incident did in fact happen, the team came out with a social approach to mitigate this. The term CFI (Community First Informer) is inspired from CFR (Community First Responders). 
 
-#### Leveraging Both Aspect
+While the CFR's role is to be the first responder to an emergency situation, CFI role will be to assist in providing information on the potential emergencies. We believe that the CFI role can empower everyday citizens like you and I to greater contribute to social and community welfare. Furthermore, we realized that a large percentage of CFR's are inactive, and might be a good resource to tap on, even if they might not be equipped to perform emergency medical procedures.
 
-After bringing the CFI to the scene, they can interact with our chatbot to provide vital information on the situation so that we can more accurately determine the level of emergency.
+#### Leveraging Both Aspects
 
-Alternatively, CFI can also be the one to call for emergency based on their own judgement at the scene.
+After guiding the CFI to the incident scene, our interactive AI chatbot provides vital information on the situation, so that the system can accurately determine the level of emergency.
+
+Alternatively, CFI's can also be the one to call for emergency based on their own judgement at the scene.
 
 ### Full pitch deck
 
-For a more in-depth explanation on our idea, challenges we might face (privacy issues, critical mass fo effectiveness) and how we mitigate them, do refer to our full pitch deck [here](https://docs.google.com/presentation/d/10_5M_DTHn7LGWXVgC4JRWy-gb9XTHm7qAQqwSBHm2k4/edit?usp=sharing)
+For a more in-depth explanation on our idea, potential challenges we might face (privacy issues, gaining critical mass etc.), and our mitigation plan, do refer to our full pitch deck [here](https://docs.google.com/presentation/d/10_5M_DTHn7LGWXVgC4JRWy-gb9XTHm7qAQqwSBHm2k4/edit?usp=sharing)
 
 ## Demo video
 
-[![Watch the video](signup_new.png)](https://youtu.be/e3n_LYNvoTI)
-
-_Click above to view video pitch_
+[![Watch the video](signup_new.png)]()
 
 ## The architecture
 
@@ -75,12 +75,11 @@ _Click above to view video pitch_
 
 In our 4 stage implementation plan, change management (getting buy-in from the public) is the toughest step, followed by the recruitment of CFIs for an effective solution.
 
-The first stages for any AI project is to
-
+The first stages for any AI project is to 
 1. Start with a small AI team and initiative
 2. Prove the organizational value of AI through prototype development and achieving successful results from the pilot testing
 
-For our CAMpong solution, privacy concerns due to the cameras being at home will be an issue. Our team takes data protection and privacy concerns seriously and we want our stakeholders to feel the same way too.
+For our CAMpong solution, privacy concerns due to the cameras being at home will be an issue. Our team takes data protection and privacy concerns seriously and we want our stakeholders to feel the same way too. 
 
 The mitigation strategy focuses heavily on addressing this risk to safeguard the public's interest, and yet still manages to serve their needs for emergency response.
 
