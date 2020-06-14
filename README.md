@@ -61,7 +61,7 @@ For a more in-depth explanation on our idea, challenges we might face (privacy i
 
 ## Demo video
 
-[![Watch the video]()]()
+[![Watch the video](signup.png)]()
 
 ## The architecture
 
