@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "twilio-hook": "twilio  phone-numbers:update '+12019285134' --sms-url='http://localhost:8080/reply'",
-    "start": "nodemon ./bin/www"
+    "start": "yarn twilio-hook & nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

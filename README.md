@@ -1,24 +1,22 @@
-# TechLink-SolutionName_SCDFXIBM
+# TechLink-CAMpong_SCDFXIBM
 
-[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://callforcode.org/slack) [![Website](https://img.shields.io/badge/View-Website-blue)](https://code-and-response.github.io/Project-Sample/)
+[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://callforcode.org/slack)
 
 ## Team TechLink
-- **Eugene Fang JunJie** - *Y4 REP student blah*
-- **Kan Zi Jun** - *Computer Science and Technology Management, Renaissance Engineering Programme, NTU*
-- **Lim Jun Quan** - *ownself fill in*
-- **Lim Jun Hup** - *ownself fill in*
-- **Selina Fang** - *ownself fill in*
+
+- **Eugene Fang JunJie** - _Y4 REP student blah_
+- **Kan Zi Jun** - _Computer Science and Technology Management, Renaissance Engineering Programme, NTU_
+- **Lim Jun Quan** - _ownself fill in_
+- **Lim Jun Hup** - _ownself fill in_
+- **Selina Fang** - _ownself fill in_
 
 ## Contents
 
 1. [Short description](#short-description)
 1. [Pitch video](#pitch-video)
 1. [The architecture](#the-architecture)
-1. [Long description](#long-description)
 1. [Project roadmap](#project-roadmap)
 1. [Getting started](#getting-started)
-1. [Running the tests](#running-the-tests)
-1. [Live demo](#live-demo)
 1. [Built with](#built-with)
 1. [Acknowledgments](#acknowledgments)
 
@@ -26,32 +24,19 @@
 
 ### What's the problem?
 
-Part of the World Health Organization's guidance on limiting further spread of COVID-19 is to practice social distancing. As a result, schools in most affected areas are taking precautionary measures by closing their facilities. With school-aged children at home for an indeterminate amount of time,  keeping them engaged, entertained, and on top of their education is important.
-
 ### How can technology help?
-
-Schools and teachers can continue to engage with their students through virtual classrooms, and even create interactive spaces for classes. As parents face a new situation where they may need to homeschool their children, finding appropriate online resources is important as well.
 
 ### The idea
 
-It's imperative that learning and creating can continue when educational institutions have to shift the way they teach in times of crises, such as the COVID-19 pandemic. Providing a set of open source tools, backed by IBM Cloud and Watson Services, will enable educators to more easily make content available for their students.
-
 ## Demo video
 
-[![Watch the video](https://github.com/Code-and-Response/Liquid-Prep/blob/master/images/IBM-interview-video-image.png)](https://youtu.be/vOgCOoy_Bx0)
+[![Watch the video]()]()
 
 ## The architecture
 
-![Video transcription/translation app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
+![architecture]()
 
-1. The user navigates to the site and uploads a video file.
-2. Watson Speech to Text processes the audio and extracts the text.
-3. Watson Translation (optionally) can translate the text to the desired language.
-4. The app stores the translated text as a document within Object Storage.
-
-## Long description
-
-[More detail is available here](DESCRIPTION.md)
+1.
 
 ## Project roadmap
 
@@ -59,77 +44,76 @@ It's imperative that learning and creating can continue when educational institu
 
 ## Getting started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Before you can begin, you'll need to sign up for a trial account with Twilio to get the needed credientials as well the the trial number to start sending out messages.
 
-```bash
-dnf install wget
-wget http://www.example.com/install.sh
-bash install.sh
-```
+Do contact us for the Watson Assistant keys for access to our model.
 
-### Installing
+### Running on local machine
 
-A step by step series of examples that tell you how to get a development env running
+1. Clone the repo to any folder in your local machine
 
-Say what the step will be, for example
+   ```bash
+   git clone https://github.com/kanzijun/TechLink-SolutionName_SCDFXIBM.git
+   ```
 
-```bash
-export TOKEN="fffd0923aa667c617a62f5A_fake_token754a2ad06cc9903543f1e85"
-export EMAIL="jane@example.com"
-dnf install npm
-node samplefile.js
-Server running at http://127.0.0.1:3000/
-```
+2. a. To start the frontend
 
-And repeat
+   ```bash
+   cd frontend/
+   yarn install
+   yarn start
+   ```
 
-```bash
-curl localhost:3000
-Thanks for looking at Code-and-Response!
-```
+   b. To start the backend
 
-End with an example of getting some data out of the system or using it for a little demo
+   ```bash
+   cd backend/
+   ```
 
-## Running the tests
+   Create a credentials.js file with the following keys
 
-Explain how to run the automated tests for this system
+   ```javascript
+   module.exports = {
+     TWILIO_CREDS: {
+       accountSid: ,
+       authToken: ,
+       trialNumber: ,
+       toNumber: ,
+     },
+     WATSON_ASSISTANT: {
+       version: "2020-04-01",
+       apiKey: ,
+       url: ,
+       assistantId: ,
+     },
+   };
+   ```
 
-### Break down into end to end tests
+   Insert your own credentials from the steps in pre-requisite
 
-Explain what these tests test and why, if you were using something like `mocha` for instnance
+   Next, In package.json, replace the phone number in twilio-hook script with the trial number from your own Twilio account
 
-```bash
-npm install mocha --save-dev
-vi test/test.js
-./node_modules/mocha/bin/mocha
-```
+   Follow the instructions in [twilio-cli-steps](https://www.twilio.com/docs/sms/quickstart/node#install-the-twilio-cli) to authenticate with your twilio account.
 
-### And coding style tests
+   Afterwards,
 
-Explain what these tests test and why, if you chose `eslint` for example
+   ```bash
+   yarn install
+   yarn start
+   ```
 
-```bash
-npm install eslint --save-dev
-npx eslint --init
-npx eslint sample-file.js
-```
-
-## Live demo
-
-You can find a running system to test at [callforcode.mybluemix.net](http://callforcode.mybluemix.net/)
+   The frontend will be deployed on http://localhost:3000, backend on http://localhost:8080
 
 ## Built with
 
-* [IBM Cloud Annotations](https://cloud.annotations.ai/login) - The open source image annotation tool for image classification
-* [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/) - The conversation AI platform for chatbot
-
-Add other stufffffffff if relevant
+- [IBM Watson Visual Recognition](https://www.ibm.com/sg-en/cloud/watson-visual-recognition) - The service on the IBM Cloud that enables you to tag, classify and search visual content using machine learning.
+- [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/) - The conversation AI platform for chatbot
 
 ## Acknowledgments
 
-* SCDF
-* IBM
+- SCDF
+- IBM
