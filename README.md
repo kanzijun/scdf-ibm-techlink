@@ -67,8 +67,6 @@ For a more in-depth explanation on our idea, challenges we might face (privacy i
 
 ![architecture](tech.jpg)
 
-1.
-
 ## Project roadmap
 
 ![Roadmap](roadmap.jpg)
