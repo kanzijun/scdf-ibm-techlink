@@ -61,7 +61,7 @@ For a more in-depth explanation on our idea, challenges we might face (privacy i
 
 ## Demo video
 
-[![Watch the video](signup_new.png)]()
+[![Watch the video](signup_new.png)](https://youtu.be/e3n_LYNvoTI)
 
 ## The architecture
 
@@ -73,11 +73,12 @@ For a more in-depth explanation on our idea, challenges we might face (privacy i
 
 In our 4 stage implementation plan, change management (getting buy-in from the public) is the toughest step, followed by the recruitment of CFIs for an effective solution.
 
-The first stages for any AI project is to 
+The first stages for any AI project is to
+
 1. Start with a small AI team and initiative
 2. Prove the organizational value of AI through prototype development and achieving successful results from the pilot testing
 
-For our CAMpong solution, privacy concerns due to the cameras being at home will be an issue. Our team takes data protection and privacy concerns seriously and we want our stakeholders to feel the same way too. 
+For our CAMpong solution, privacy concerns due to the cameras being at home will be an issue. Our team takes data protection and privacy concerns seriously and we want our stakeholders to feel the same way too.
 
 The mitigation strategy focuses heavily on addressing this risk to safeguard the public's interest, and yet still manages to serve their needs for emergency response.
 
