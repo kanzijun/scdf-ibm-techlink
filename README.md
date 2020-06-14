@@ -63,6 +63,8 @@ For a more in-depth explanation on our idea, challenges we might face (privacy i
 
 [![Watch the video](signup_new.png)](https://youtu.be/e3n_LYNvoTI)
 
+_Click above to view video pitch_
+
 ## The architecture
 
 ![architecture](tech.jpg)
