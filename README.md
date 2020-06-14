@@ -63,7 +63,9 @@ For a more in-depth explanation on our idea, potential challenges we might face 
 
 ## Demo video
 
-[![Watch the video](signup_new.png)]()
+[![Watch the video](signup_new.png)](https://youtu.be/e3n_LYNvoTI)
+
+_Click [here](https://youtu.be/e3n_LYNvoTI) or above to view video pitch_
 
 ## The architecture
 
